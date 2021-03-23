@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+a {
+    text-decoration: none;
+    color: #222;
+}
+
+/*NAVBAR*/
+
+#navbar {
+    display: grid;
+    grid-template-columns: 55px 55px 1fr repeat(3, 55px) 60px;
+    grid-template-rows: 50px;
+    grid-template-areas: 
+    "about store . gmail images dot-menu sign-in";
+    padding: 5px 10px;
+}
+
+#nine-dot {
+    width: 22px;
+    height: 22px;
+}
+
+#about, #store, #gmail, #images, #dot-menu, #sign-in {
+    justify-self: center;
+    align-self: center;
+    padding-left: 13px;
+}
+
+#navbar > a {
+    font-size: .85em;
+}
+
+#about {
+    grid-area: about;
+}
+
+#store {
+    grid-area: store;
+}
+
+#gmail {
+    grid-area: gmail;
+    padding-left: 18px;
+}
+
+#images {
+    grid-area: images;
+    padding-left: 18px;
+}
+
+#dot-menu {
+    grid-area: dot-menu;
+    padding-left: 30px;
+    padding-top: 3px;
+}
+
+#sign-in {
+    grid-area: sign-in;
+    padding-right: 3px;
+}
+
+/*NAVBAR-END*/
+
+/*MAIN*/
+
+#main {
+  display: grid;
+  grid-template-columns: 150px 1fr 150px;
+  grid-template-rows: 280px 90px 200px; 
+  grid-template-areas: 
+  ". google-img ."
+  ". search ."
+  ". flexbox ."; 
+  padding: 10px;
+}
+
+#google-img {
+    grid-area: google-img;
+    justify-self: center;
+    align-self: flex-end;
+}
+
+#search {
+    grid-area: search;
+    height: 42px;
+    width: 81%;
+    justify-self: center;
+    align-self: center;
+    border-radius: 24px;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+}
+
+#btn-flex {
+    grid-area: flexbox;
+    justify-self: center;
+
+}
+
+#google-search-btn, #ifl-btn {
+    height: 36px;
+    line-height: 27px;
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 0 15px;
+    margin: 11px 4px;
+    font-family: arial, sans-serif;
+    font-size: .9em;
+}
+
+#ifl-btn {
+}
+/*MAIN-END*/
+
+/*FOOTER*/
+
+#footer {
+    display: grid;
+    position: fixed;
+    bottom: 0;
+
+}
+
+/*FOOTER-END*/
