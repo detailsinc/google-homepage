@@ -15,11 +15,11 @@ a {
 
 #navbar {
     display: grid;
-    grid-template-columns: 55px 55px 1fr repeat(3, 55px) 60px;
+    grid-template-columns: 55px 55px 1fr repeat(3, 55px) 100px;
     grid-template-rows: 50px;
     grid-template-areas: 
     "about store . gmail images dot-menu sign-in";
-    padding: 5px 10px;
+    padding: 5px 15px 5px 10px;
 }
 
 #nine-dot {
@@ -30,11 +30,11 @@ a {
 #about, #store, #gmail, #images, #dot-menu, #sign-in {
     justify-self: center;
     align-self: center;
-    padding-left: 13px;
+    padding-left: 10px;
 }
 
 #navbar > a {
-    font-size: .85em;
+    font-size: .86em;
 }
 
 #about {
@@ -47,23 +47,35 @@ a {
 
 #gmail {
     grid-area: gmail;
-    padding-left: 18px;
+    padding-right: 16px;
 }
 
 #images {
     grid-area: images;
-    padding-left: 18px;
+    padding-right: 20px;
 }
 
 #dot-menu {
     grid-area: dot-menu;
-    padding-left: 30px;
+    padding-right: 15px;
     padding-top: 3px;
 }
 
 #sign-in {
     grid-area: sign-in;
-    padding-right: 3px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: .50px;
+    background: #1a73e8;
+    color: #fff;
+    border-radius: 4px;
+    padding: 9px 24px;
+
+
+}
+
+#abc {
+    background: #fff;
 }
 
 /*NAVBAR-END*/
@@ -97,7 +109,10 @@ a {
     background: #fff;
     border: 1px solid #dfe1e5;
     box-shadow: none;
+    text-indent: 35px;
 }
+
+
 
 #btn-flex {
     grid-area: flexbox;
