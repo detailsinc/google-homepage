@@ -70,13 +70,8 @@ a {
     color: #fff;
     border-radius: 4px;
     padding: 9px 24px;
-
-
 }
 
-#abc {
-    background: #fff;
-}
 
 /*NAVBAR-END*/
 
@@ -102,14 +97,15 @@ a {
 #search {
     grid-area: search;
     height: 42px;
-    width: 81%;
+    width: 580px;
     justify-self: center;
     align-self: center;
     border-radius: 24px;
     background: #fff;
     border: 1px solid #dfe1e5;
     box-shadow: none;
-    text-indent: 35px;
+    text-indent: 45px;
+    padding-top: 3px;
 }
 
 
@@ -132,8 +128,6 @@ a {
     font-size: .9em;
 }
 
-#ifl-btn {
-}
 /*MAIN-END*/
 
 /*FOOTER*/
@@ -142,7 +136,67 @@ a {
     display: grid;
     position: fixed;
     bottom: 0;
-
+    grid-template-columns:  30px repeat(2, 75px) 165px 1fr repeat(3, 65px) 30px;
+    width: 100%;
+    height: 46px;
+    grid-template-areas: 
+    ". advertising business hsw cns privacy terms settings .";
+    background-color: #f2f2f2; 
 }
 
+#footer > a {
+    font-size: .87em;
+    color: #70757a;
+}
+
+#advertising, #business, #hsw, #cns, #privacy, #terms, #settings {
+    justify-self: center;
+    align-self: center;
+}
+
+#advertising, #business, #hsw {
+    padding-left: 5px;
+}
+
+#advertising {
+    grid-area: advertising;
+}
+
+#business {
+    grid-area: business;
+    padding-left: 40px;
+}
+
+#hsw {
+    grid-area: hsw;
+    padding-left: 40px;
+}
+
+#cns {
+    grid-area: cns;
+    padding-right: 120px;
+}
+
+#leaf {
+    float: left;
+    width: 12px;
+    padding-right: 9px;
+}
+
+#privacy {
+    grid-area: privacy;
+    padding-right: 35px;
+    padding-left: 10px;
+}
+
+#terms {
+    grid-area: terms;
+    padding-right: 15px;
+}
+
+#settings {
+    grid-area: settings;
+    padding-right: 15px;
+    padding-left: 20px;
+}
 /*FOOTER-END*/
