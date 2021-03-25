@@ -2,6 +2,7 @@
     margin: 0;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
+    
 }
 
 
@@ -72,7 +73,6 @@ a {
     padding: 9px 24px;
 }
 
-
 /*NAVBAR-END*/
 
 /*MAIN*/
@@ -109,14 +109,12 @@ a {
 }
 
 
-
 #btn-flex {
     grid-area: flexbox;
     justify-self: center;
-
 }
 
-#google-search-btn, #ifl-btn {
+.main-btn {
     height: 36px;
     line-height: 27px;
     background-color: #f8f9fa;
@@ -136,11 +134,11 @@ a {
     display: grid;
     position: fixed;
     bottom: 0;
-    grid-template-columns:  30px repeat(2, 75px) 165px 1fr repeat(3, 65px) 30px;
+    grid-template-columns:  30px 90px 90px 165px 460px 250px 585px repeat(3, 70px) 30px;
     width: 100%;
     height: 46px;
     grid-template-areas: 
-    ". advertising business hsw cns privacy terms settings .";
+    ". advertising business hsw . cns . privacy terms settings .";
     background-color: #f2f2f2; 
 }
 
@@ -155,7 +153,6 @@ a {
 }
 
 #advertising, #business, #hsw {
-    padding-left: 5px;
 }
 
 #advertising {
@@ -164,17 +161,14 @@ a {
 
 #business {
     grid-area: business;
-    padding-left: 40px;
 }
 
 #hsw {
     grid-area: hsw;
-    padding-left: 40px;
 }
 
 #cns {
     grid-area: cns;
-    padding-right: 120px;
 }
 
 #leaf {
@@ -185,18 +179,41 @@ a {
 
 #privacy {
     grid-area: privacy;
-    padding-right: 35px;
-    padding-left: 10px;
+
 }
 
 #terms {
     grid-area: terms;
-    padding-right: 15px;
+
 }
 
 #settings {
     grid-area: settings;
-    padding-right: 15px;
-    padding-left: 20px;
+
 }
 /*FOOTER-END*/
+
+/*HOVER-CSS*/
+
+.hlink:hover {
+    text-decoration: underline;
+}
+
+#sign-in:hover {
+    background: #2b7de9;
+}
+
+#dot-menu:hover {
+    background: #f2f2f2;
+}
+
+.main-btn:hover {
+    border: 1px solid #dadce0;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+}
+
+#search:hover {
+    box-shadow: 0 1px 4px rgba(32,33,36,.28);
+}
+
+/*HOVER-CSS-END*/
